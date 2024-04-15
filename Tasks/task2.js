@@ -20,6 +20,6 @@ solve('str_ng', 'i', 'String');
 
 function solve2(str, symbol, result) {
     let res = str.replace('_', symbol);
-    let output = res == result ? 'Matched' : 'Not Matched!';
+    let output = res === result ? 'Matched' : 'Not Matched!';
     console.log(output);
 }
