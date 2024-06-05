@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #red;
+    background-color: #f4f4f4;
     color: #333;
 }
 
@@ -56,53 +56,61 @@ main {
 h1 {
     color: #4CAF50;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
-h3 {
-    color: #555;
-    margin-top: 0;
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
-ul {
-    padding-left: 1.5rem;
+arcticle {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
 }
 
-ul li {
+arcticle:hover {
+    transform: translateY(-5px);
+}
+
+.section-image img {
+    width: 100%;
+    height: auto;
+}
+
+.cource-info {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+}
+
+.cource-info li {
     margin-bottom: 0.5rem;
 }
 
-.image-container {
-    text-align: center;
-    margin: 2rem 0;
+.cource-info strong {
+    color: #4CAF50;
 }
 
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-button {
+.courceBtn {
     display: block;
-    width: 200px;
-    margin: 0 auto;
+    width: 100%;
     padding: 1rem;
     background-color: #4CAF50;
     color: white;
+    text-align: center;
+    text-decoration: none;
     border: none;
-    border-radius: 5px;
+    border-top: 1px solid #f4f4f4;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-button a {
-    color: white;
-    text-decoration: none;
-}
-
-button:hover {
+.courceBtn:hover {
     background-color: #45a049;
 }
 
